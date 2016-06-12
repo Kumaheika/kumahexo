@@ -111,53 +111,7 @@ roo">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <blockquote>
-<p>node.js Hexo sass?</p>
-</blockquote>
-<h2 id="本篇主要紀錄載上傳github以及遇到的的問題">本篇主要紀錄載上傳github以及遇到的的問題</h2>
-<p>上一篇主要是介紹安裝的過程，本篇主要是紀錄上傳到github過程以及一些遇到的問題排除方法</p>
-<h3 id="上傳_github_的設定">上傳 github 的設定</h3>
-<p>在上傳前，請先開啟根目錄下 _config.yml 做一些基本的設定</p>
-<h5 id="#URL_設定_(_:後面要有空格_)">#URL 設定 ( :後面要有空格 )</h5>
-<pre><code>ur<span class="variable">l:</span> http<span class="variable">s:</span>//github.<span class="keyword">com</span>/你的名字github名稱
-roo<span class="variable">t:</span> /repository的名稱/
-</code></pre><h5 id="#Deployment_設定_(_:後面要有空格_)">#Deployment 設定 ( :後面要有空格 )</h5>
-<pre><code>deploy:
-    <span class="class"><span class="keyword">type</span>: <span class="title">github</span></span>
-    repository: https:<span class="comment">//github.com/Kumaheika/kumahexo.git</span>
-    branch: gh-pages
-</code></pre><h3 id="step_02_-_安裝_Hexo_2-8-3">step 02 - 安裝 Hexo 2.8.3</h3>
-<p>這邊是聽同事建議，2.8.3 似乎比較安定，所以選擇這個版本<br>在安裝好 Node.js 後，接著執行 command line，輸入：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo@v2.<span class="number">8.3</span> -g</div></pre></td></tr></table></figure>
-
-<p><strong>如果遇到權限問題，前面請加上 sudo</strong></p>
-<h3 id="step_03_-_建立要安裝_Hexo_的資料夾">step 03 - 建立要安裝 Hexo 的資料夾</h3>
-<p>這邊可以自己找個地方新增資料夾，也可以用 cmd</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mkdir 你的資料夾名稱</div></pre></td></tr></table></figure>
-
-<h3 id="step_04_-_前往_Hexo_資料夾並安裝">step 04 - 前往 Hexo 資料夾並安裝</h3>
-<p>在 cmd 中，先移動到剛剛新增的資料夾內</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> 你的資料夾名稱</div></pre></td></tr></table></figure>
-
-<p>接著執行 Hexo 的初始化，並安裝node</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo init</div><div class="line">npm install</div></pre></td></tr></table></figure>
-
-<p>然後安裝 Hexo 的 plugin</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm install hexo-renderer-marked@<span class="number">0.1</span> --save</div><div class="line">npm install hexo-renderer-stylus@<span class="number">0.1</span> --save</div></pre></td></tr></table></figure>
-
-<h3 id="step_05_-_確認是否安裝、並執行">step 05 - 確認是否安裝、並執行</h3>
-<p>到你安裝 Hexo 的資料夾內，打開 <strong>package.json</strong> 檔案，<br>裏面會有你安裝的 plugin 的名稱，有的話表示成功。<br>接著，要在本機上啟動 Hexo</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo server</div></pre></td></tr></table></figure>
-
-<p>然後開啟你的瀏覽器，輸入 <strong>localhost:4000</strong> 就可以看到你的預設首頁啦!!</p>
-<hr>
-<h5 id="Reference">Reference</h5>
-<ul>
-<li><a href="http://goo.gl/WFSo21" target="_blank" rel="external">Jacky blog</a></li>
-<li><a href="https://hexo.io/zh-tw/docs/" target="_blank" rel="external">hexo.io</a></li>
-<li><a href="http://pagent.github.io/2015/03/14/hexo-283-install/" target="_blank" rel="external">日文的Hexo介紹</a></li>
-</ul>
-
+        使用 Hexo 來寫 Blog(上傳github+問題排解)
       
     </div>
     <footer class="article-footer">
