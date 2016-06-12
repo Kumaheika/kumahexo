@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives: 2016 | KumaKobo</title>
+  <title>Tag: Hexo | KumaKobo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description">
 <meta property="og:type" content="website">
 <meta property="og:title" content="KumaKobo">
-<meta property="og:url" content="https://github.com/Kumaheika/kumahexo/archives/2016/">
+<meta property="og:url" content="https://github.com/Kumaheika/kumahexo/tags/Hexo/">
 <meta property="og:site_name" content="KumaKobo">
 <meta property="og:description">
 <meta name="twitter:card" content="summary">
@@ -174,108 +174,6 @@ s.setAttribute('data-timestamp', +new Date());
 
 
   
-    <article id="post-台南好想-Vuejs實作" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/kumahexo/2016/06/07/台南好想-Vuejs實作/" class="article-date">
-  <time datetime="2016-06-07T11:30:58.000Z" itemprop="datePublished">Jun 7 2016</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/kumahexo/2016/06/07/台南好想-Vuejs實作/">Vuejs + Firebase動手做</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>node.js Hexo sass?</p>
-</blockquote>
-<h2 id="Vue-js_+_Firebase_追蹤使用者定位">Vue.js + Firebase 追蹤使用者定位</h2>
-<ul>
-<li>從npm先安裝 vujs 以及 firebase-tools</li>
-<li>chrome 安裝 vue-devtools</li>
-</ul>
-<p><a href="http://vuejs.org/guide/" target="_blank" rel="external">http://vuejs.org/guide/</a></p>
-<p>###<br>安裝 Hexo 之前，請先安裝好 <a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js</a> 以及 <a href="https://git-scm.com/" target="_blank" rel="external">Git</a></p>
-<h3 id="step_02_-_安裝_Hexo_2-8-3">step 02 - 安裝 Hexo 2.8.3</h3>
-<p>這邊是聽同事建議，2.8.3 似乎比較安定，所以選擇這個版本<br>在安裝好 Node.js 後，接著執行 command line，輸入：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo@v2.<span class="number">8.3</span> -g</div></pre></td></tr></table></figure>
-
-<p><strong>如果遇到權限問題，前面請加上 sudo</strong></p>
-<h3 id="step_03_-_建立要安裝_Hexo_的資料夾">step 03 - 建立要安裝 Hexo 的資料夾</h3>
-<p>這邊可以自己找個地方新增資料夾，也可以用 cmd</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mkdir 你的資料夾名稱</div></pre></td></tr></table></figure>
-
-<h3 id="step_04_-_前往_Hexo_資料夾並安裝">step 04 - 前往 Hexo 資料夾並安裝</h3>
-<p>在 cmd 中，先移動到剛剛新增的資料夾內</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> 你的資料夾名稱</div></pre></td></tr></table></figure>
-
-<p>接著執行 Hexo 的初始化，並安裝node</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo init</div><div class="line">npm install</div></pre></td></tr></table></figure>
-
-<p>然後安裝 Hexo 的 plugin</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm install hexo-renderer-marked@<span class="number">0.1</span> --save</div><div class="line">npm install hexo-renderer-stylus@<span class="number">0.1</span> --save</div></pre></td></tr></table></figure>
-
-<h3 id="step_05_-_確認是否安裝、並執行">step 05 - 確認是否安裝、並執行</h3>
-<p>到你安裝 Hexo 的資料夾內，打開 <strong>package.json</strong> 檔案，<br>裏面會有你安裝的 plugin 的名稱，有的話表示成功。<br>接著，要在本機上啟動 Hexo</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo server</div></pre></td></tr></table></figure>
-
-<p>然後開啟你的瀏覽器，輸入 <strong>localhost:4000</strong> 就可以看到你的預設首頁啦!!</p>
-<hr>
-<h5 id="Reference">Reference</h5>
-<ul>
-<li><a href="http://vuejs.org/" target="_blank" rel="external">Vue.js</a></li>
-<li><a href="https://hackpad.com/Vue.js-Firebase--vLoj1BeTn8f" target="_blank" rel="external">hackpad</a></li>
-<li><a href="https://firebase.google.com/" target="_blank" rel="external">Firebase</a></li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <div id="disqus_thread"></div>
-<script>
-/**
-* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
-*/
-/*
-var disqus_config = function () {
-this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-
-s.src = '//kumahexo.disqus.com/embed.js';
-
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-      <a data-url="https://github.com/Kumaheika/2016/06/07/台南好想-Vuejs實作/" data-id="6a0b27q716k284pp" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/kumahexo/tags/Vue-Firebase/">Vue, Firebase</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
     <article id="post-Hexo_Blog" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/kumahexo/2016/05/31/Hexo_Blog/" class="article-date">
@@ -367,83 +265,6 @@ s.setAttribute('data-timestamp', +new Date());
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/kumahexo/tags/Hexo/">Hexo</a></li></ul>
 
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/kumahexo/2016/05/31/hello-world/" class="article-date">
-  <time datetime="2016-05-31T15:11:34.000Z" itemprop="datePublished">May 31 2016</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/kumahexo/2016/05/31/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2>
-<h3 id="Create_a_new_post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <div id="disqus_thread"></div>
-<script>
-/**
-* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
-*/
-/*
-var disqus_config = function () {
-this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-
-s.src = '//kumahexo.disqus.com/embed.js';
-
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-      <a data-url="https://github.com/Kumaheika/2016/05/31/hello-world/" data-id="ik8nlgf5y3q6pnhu" class="article-share-link">Share</a>
-      
-      
     </footer>
   </div>
   
