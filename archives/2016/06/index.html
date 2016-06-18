@@ -87,40 +87,9 @@
 
       </header>
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>node.js Hexo sass?</p>
-</blockquote>
-<h2 id="本篇主要紀錄載上傳時遇到的問題">本篇主要紀錄載上傳時遇到的問題</h2>
-<p>上一篇主要是介紹上傳到github過程，本篇是說明一些遇到的問題</p>
-<h3 id="上傳_github_後網頁沒吃到CSS樣式？">上傳 github 後網頁沒吃到CSS樣式？</h3>
-<p>剛上傳時候，很開心地跑上去連結一下成果，結果會發現網頁竟然沒吃到CSS樣式，<br>詢問過同事之後，才知道上一篇_config.yml 裡面設定，如果 : 後面不加上空格的話，會導致連結失效以致於吃不到 CSS (如下)</p>
-<h5 id="#URL_設定_(_:_後面要有空格_)">#URL 設定 ( : 後面要有空格 )</h5>
-<pre><code>ur<span class="variable">l:</span> http<span class="variable">s:</span>//github.<span class="keyword">com</span>/你的github名稱
-roo<span class="variable">t:</span> /repository的名稱/
-</code></pre><h5 id="#Deployment_設定_(_:_後面要有空格_)">#Deployment 設定 ( : 後面要有空格 )</h5>
-<pre><code>deploy:
-    <span class="class"><span class="keyword">type</span>: <span class="title">github</span></span>
-    repository: https:<span class="comment">//github.com/你的github名稱/kumahexo.git</span>
-    branch: gh-pages (如果是用github主頁就不用)
-</code></pre><h3 id="更新了_theme_，上傳還是舊的？">更新了 theme ，上傳還是舊的？</h3>
-<p>這問題一開始也困擾我很久，後來爬了一下發文才發現到，<br>因為 HEXO 會自動判斷你的檔案是否有新增減少，<br>如果只是改 theme 在 generate 時候只會更新_posts裡面的內容，<br>為了讓他每次上傳都記得更新，所以在 generate 之前要先執行</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> hexo clean</div></pre></td></tr></table></figure>
-
-<p>這樣才能確保每次上傳都是最新的狀態。</p>
-<hr>
-<h5 id="Reference">Reference</h5>
-<ul>
-<li><a href="http://goo.gl/WFSo21" target="_blank" rel="external">Jacky blog</a></li>
-<li><a href="https://hexo.io/zh-tw/docs/" target="_blank" rel="external">hexo.io</a></li>
-<li><a href="http://pagent.github.io/2015/03/14/hexo-283-install/" target="_blank" rel="external">日文的Hexo介紹</a></li>
-</ul>
-
-      
-    </div>
+    
     <footer class="article-footer">
-      <a data-url="https://github.com/Kumaheika/2016/06/09/Hexo_Blog3/" data-id="hiw65194prwrs3tq" class="article-share-link">Share</a>
+      <a data-url="https://github.com/Kumaheika/2016/06/09/Hexo_Blog3/" data-id="2v25kyteqjgoxmoy" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/kumahexo/tags/Hexo/">Hexo</a></li></ul>
@@ -166,45 +135,9 @@ s.setAttribute('data-timestamp', +new Date());
 
       </header>
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>node.js Hexo sass?</p>
-</blockquote>
-<h2 id="本篇主要紀錄載上傳github的設定">本篇主要紀錄載上傳github的設定</h2>
-<p>上一篇主要是介紹安裝的過程，本篇主要是紀錄上傳到github過程</p>
-<h3 id="上傳_github_的設定">上傳 github 的設定</h3>
-<p>在上傳前，請先開啟根目錄下 _config.yml 做一些基本的設定</p>
-<h5 id="#URL_設定_(_:_後面要有空格_)">#URL 設定 ( : 後面要有空格 )</h5>
-<pre><code>ur<span class="variable">l:</span> http<span class="variable">s:</span>//github.<span class="keyword">com</span>/你的github名稱
-roo<span class="variable">t:</span> /repository的名稱/
-</code></pre><h5 id="#Deployment_設定_(_:_後面要有空格_)">#Deployment 設定 ( : 後面要有空格 )</h5>
-<pre><code>deploy:
-    <span class="class"><span class="keyword">type</span>: <span class="title">github</span></span>
-    repository: https:<span class="comment">//github.com/你的github名稱/kumahexo.git</span>
-    branch: gh-pages (如果是用github主頁就不用)
-</code></pre><p>完成以後，在 commandLine (mac是終端機)，移動到目前 HEXO 的資料夾下，</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> 你的資料夾名稱</div></pre></td></tr></table></figure>
-
-<p>輸入</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> hexo generate</div><div class="line">或是簡寫</div><div class="line"><span class="built_in">sudo</span> hexo g</div></pre></td></tr></table></figure>
-
-<p>HEXO 就會開始將資料 build 成可上傳的檔案，這時 HEXO 內就會多出 <strong>public</strong> 的文件夾 ，最後在執行上傳的動作</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> hexo deploy</div><div class="line">或是簡寫</div><div class="line"><span class="built_in">sudo</span> hexo d</div></pre></td></tr></table></figure>
-
-<p>就會開始上傳至 github 了！！</p>
-<hr>
-<h5 id="Reference">Reference</h5>
-<ul>
-<li><a href="http://goo.gl/WFSo21" target="_blank" rel="external">Jacky blog</a></li>
-<li><a href="https://hexo.io/zh-tw/docs/" target="_blank" rel="external">hexo.io</a></li>
-<li><a href="http://pagent.github.io/2015/03/14/hexo-283-install/" target="_blank" rel="external">日文的Hexo介紹</a></li>
-</ul>
-
-      
-    </div>
+    
     <footer class="article-footer">
-      <a data-url="https://github.com/Kumaheika/2016/06/07/Hexo_Blog2/" data-id="b1nyrbsvoy0ok73y" class="article-share-link">Share</a>
+      <a data-url="https://github.com/Kumaheika/2016/06/07/Hexo_Blog2/" data-id="q8uokpgle4o6c40p" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/kumahexo/tags/Hexo/">Hexo</a></li></ul>
@@ -250,29 +183,9 @@ s.setAttribute('data-timestamp', +new Date());
 
       </header>
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>node.js Hexo sass?</p>
-</blockquote>
-<h2 id="Vue-js_+_Firebase_追蹤使用者定位">Vue.js + Firebase 追蹤使用者定位</h2>
-<ul>
-<li>從npm先安裝 vujs 以及 firebase-tools</li>
-<li>chrome 安裝 vue-devtools</li>
-</ul>
-<p><a href="http://vuejs.org/guide/" target="_blank" rel="external">http://vuejs.org/guide/</a></p>
-<hr>
-<h5 id="Reference">Reference</h5>
-<ul>
-<li><a href="http://vuejs.org/" target="_blank" rel="external">Vue.js</a></li>
-<li><a href="https://hackpad.com/Vue.js-Firebase--vLoj1BeTn8f" target="_blank" rel="external">hackpad</a></li>
-<li><a href="https://firebase.google.com/" target="_blank" rel="external">Firebase</a></li>
-</ul>
-
-      
-    </div>
+    
     <footer class="article-footer">
-      <a data-url="https://github.com/Kumaheika/2016/06/07/台南好想-Vuejs實作/" data-id="3jr4g111ilj9d26p" class="article-share-link">Share</a>
+      <a data-url="https://github.com/Kumaheika/2016/06/07/台南好想-Vuejs實作/" data-id="1yiu9cgmtkngs14v" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/kumahexo/tags/Vue-Firebase/">Vue, Firebase</a></li></ul>
@@ -299,6 +212,7 @@ s.setAttribute('data-timestamp', +new Date());
 
   
   
+
 </section>
         
           <aside id="sidebar">
