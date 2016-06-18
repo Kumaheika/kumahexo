@@ -67,177 +67,112 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-Hexo_Blog3" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/kumahexo/2016/06/09/Hexo_Blog3/" class="article-date">
-  <time datetime="2016-06-09T12:53:07.000Z" itemprop="datePublished">Jun 9 2016</time>
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/kumahexo/archives/2016" class="archive-year">2016</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/kumahexo/2016/06/09/Hexo_Blog3/" class="archive-article-date">
+  <time datetime="2016-06-09T12:53:07.000Z" itemprop="datePublished">Jun 9</time>
 </a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
+      
   
     <h1 itemprop="name">
-      <a class="article-title" href="/kumahexo/2016/06/09/Hexo_Blog3/">使用 Hexo 來寫 Blog(問題排解)</a>
+      <a class="archive-article-title" href="/kumahexo/2016/06/09/Hexo_Blog3/">使用 Hexo 來寫 Blog(問題排解)</a>
     </h1>
   
 
-      </header>
-    
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>node.js Hexo sass?</p>
-</blockquote>
-<h2 id="本篇主要紀錄載上傳時遇到的問題">本篇主要紀錄載上傳時遇到的問題</h2>
-<p>上一篇主要是介紹上傳到github過程，本篇是說明一些遇到的問題</p>
-<h3 id="上傳_github_後網頁沒吃到CSS樣式？">上傳 github 後網頁沒吃到CSS樣式？</h3>
-<p>剛上傳時候，很開心地跑上去連結一下成果，結果會發現網頁竟然沒吃到CSS樣式，<br>詢問過同事之後，才知道上一篇_config.yml 裡面設定，如果 : 後面不加上空格的話，會導致連結失效以致於吃不到 CSS (如下)</p>
-<h5 id="#URL_設定_(_:_後面要有空格_)">#URL 設定 ( : 後面要有空格 )</h5>
-<pre><code>ur<span class="variable">l:</span> http<span class="variable">s:</span>//github.<span class="keyword">com</span>/你的github名稱
-roo<span class="variable">t:</span> /repository的名稱/
-</code></pre><h5 id="#Deployment_設定_(_:_後面要有空格_)">#Deployment 設定 ( : 後面要有空格 )</h5>
-<pre><code>deploy:
-    <span class="class"><span class="keyword">type</span>: <span class="title">github</span></span>
-    repository: https:<span class="comment">//github.com/你的github名稱/kumahexo.git</span>
-    branch: gh-pages (如果是用github主頁就不用)
-</code></pre><h3 id="更新了_theme_，上傳還是舊的？">更新了 theme ，上傳還是舊的？</h3>
-<p>這問題一開始也困擾我很久，後來爬了一下發文才發現到，<br>因為 HEXO 會自動判斷你的檔案是否有新增減少，<br>如果只是改 theme 在 generate 時候只會更新_posts裡面的內容，<br>為了讓他每次上傳都記得更新，所以在 generate 之前要先執行</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> hexo clean</div></pre></td></tr></table></figure>
-
-<p>這樣才能確保每次上傳都是最新的狀態。</p>
-<hr>
-<h5 id="Reference">Reference</h5>
-<ul>
-<li><a href="http://goo.gl/WFSo21" target="_blank" rel="external">Jacky blog</a></li>
-<li><a href="https://hexo.io/zh-tw/docs/" target="_blank" rel="external">hexo.io</a></li>
-<li><a href="http://pagent.github.io/2015/03/14/hexo-283-install/" target="_blank" rel="external">日文的Hexo介紹</a></li>
-</ul>
-
-      
-    </div>
-
-    <footer class="article-footer">
-      <a data-url="https://github.com/Kumaheika/2016/06/09/Hexo_Blog3/" data-id="nc9sc43pe87v2nbo" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/kumahexo/tags/Hexo/">Hexo</a></li></ul>
-
-      <div id="disqus_thread"></div>
-<script>
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-
-s.src = '//kumahexo.disqus.com/embed.js';
-
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-
-    </footer>
+    </header>
   </div>
-  
 </article>
-
-
-
   
-    <article id="post-Hexo_Blog2" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/kumahexo/2016/06/07/Hexo_Blog2/" class="article-date">
-  <time datetime="2016-06-07T12:53:07.000Z" itemprop="datePublished">Jun 7 2016</time>
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/kumahexo/2016/06/07/Hexo_Blog2/" class="archive-article-date">
+  <time datetime="2016-06-07T12:53:07.000Z" itemprop="datePublished">Jun 7</time>
 </a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
+      
   
     <h1 itemprop="name">
-      <a class="article-title" href="/kumahexo/2016/06/07/Hexo_Blog2/">使用 Hexo 來寫 Blog(上傳github)</a>
+      <a class="archive-article-title" href="/kumahexo/2016/06/07/Hexo_Blog2/">使用 Hexo 來寫 Blog(上傳github)</a>
     </h1>
   
 
-      </header>
-    
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>node.js Hexo sass?</p>
-</blockquote>
-<h2 id="本篇主要紀錄載上傳github的設定">本篇主要紀錄載上傳github的設定</h2>
-<p>上一篇主要是介紹安裝的過程，本篇主要是紀錄上傳到github過程</p>
-<h3 id="上傳_github_的設定">上傳 github 的設定</h3>
-<p>在上傳前，請先開啟根目錄下 _config.yml 做一些基本的設定</p>
-<h5 id="#URL_設定_(_:_後面要有空格_)">#URL 設定 ( : 後面要有空格 )</h5>
-<pre><code>ur<span class="variable">l:</span> http<span class="variable">s:</span>//github.<span class="keyword">com</span>/你的github名稱
-roo<span class="variable">t:</span> /repository的名稱/
-</code></pre><h5 id="#Deployment_設定_(_:_後面要有空格_)">#Deployment 設定 ( : 後面要有空格 )</h5>
-<pre><code>deploy:
-    <span class="class"><span class="keyword">type</span>: <span class="title">github</span></span>
-    repository: https:<span class="comment">//github.com/你的github名稱/kumahexo.git</span>
-    branch: gh-pages (如果是用github主頁就不用)
-</code></pre><p>完成以後，在 commandLine (mac是終端機)，移動到目前 HEXO 的資料夾下，</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> 你的資料夾名稱</div></pre></td></tr></table></figure>
-
-<p>輸入</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> hexo generate</div><div class="line">或是簡寫</div><div class="line"><span class="built_in">sudo</span> hexo g</div></pre></td></tr></table></figure>
-
-<p>HEXO 就會開始將資料 build 成可上傳的檔案，這時 HEXO 內就會多出 <strong>public</strong> 的文件夾 ，最後在執行上傳的動作</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> hexo deploy</div><div class="line">或是簡寫</div><div class="line"><span class="built_in">sudo</span> hexo d</div></pre></td></tr></table></figure>
-
-<p>就會開始上傳至 github 了！！</p>
-<hr>
-<h5 id="Reference">Reference</h5>
-<ul>
-<li><a href="http://goo.gl/WFSo21" target="_blank" rel="external">Jacky blog</a></li>
-<li><a href="https://hexo.io/zh-tw/docs/" target="_blank" rel="external">hexo.io</a></li>
-<li><a href="http://pagent.github.io/2015/03/14/hexo-283-install/" target="_blank" rel="external">日文的Hexo介紹</a></li>
-</ul>
-
-      
-    </div>
-
-    <footer class="article-footer">
-      <a data-url="https://github.com/Kumaheika/2016/06/07/Hexo_Blog2/" data-id="8unqvv273fi6l6ik" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/kumahexo/tags/Hexo/">Hexo</a></li></ul>
-
-      <div id="disqus_thread"></div>
-<script>
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-
-s.src = '//kumahexo.disqus.com/embed.js';
-
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-
-    </footer>
+    </header>
   </div>
-  
 </article>
+  
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/kumahexo/2016/06/07/台南好想-Vuejs實作/" class="archive-article-date">
+  <time datetime="2016-06-07T11:30:58.000Z" itemprop="datePublished">Jun 7</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/kumahexo/2016/06/07/台南好想-Vuejs實作/">Vuejs + Firebase動手做</a>
+    </h1>
+  
 
+    </header>
+  </div>
+</article>
+  
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/kumahexo/2016/05/31/Hexo_Blog/" class="archive-article-date">
+  <time datetime="2016-05-31T15:17:58.000Z" itemprop="datePublished">May 31</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/kumahexo/2016/05/31/Hexo_Blog/">使用 Hexo 來寫 Blog(安裝過程)</a>
+    </h1>
+  
 
+    </header>
+  </div>
+</article>
+  
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/kumahexo/2016/05/31/hello-world/" class="archive-article-date">
+  <time datetime="2016-05-31T15:11:34.000Z" itemprop="datePublished">May 31</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/kumahexo/2016/05/31/hello-world/">Hello World</a>
+    </h1>
+  
 
+    </header>
+  </div>
+</article>
   
   
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/kumahexo/archives/page/2/">2</a><a class="page-number" href="/kumahexo/archives/page/3/">3</a><a class="extend next" rel="next" href="/kumahexo/archives/page/2/">Next &raquo;</a>
-    </nav>
+    </div></section>
   
 
 </section>
