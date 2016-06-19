@@ -684,9 +684,9 @@ a.article-title:hover {
 .article-more-link a {
   display: inline-block;
   line-height: 1em;
-  padding: 6px 90px;
-  -webkit-border-radius: 15px;
-  border-radius: 15px;
+  padding: 15px 90px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
   background: #fff;
   color: #6cacbf;
   text-shadow: 0 1px #fff;
@@ -696,10 +696,10 @@ a.article-title:hover {
   border: 1px solid #6cacbf;
 }
 .article-more-link a:hover {
-  background: #c3512f;
+  background: #6cacbf;
   color: #fff;
   text-decoration: none;
-  text-shadow: 0 1px #9c4126;
+  text-shadow: 0 1px #4991a7;
 }
 .article-footer {
   font-size: 0.85em;
