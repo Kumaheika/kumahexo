@@ -683,15 +683,15 @@ a.article-title:hover {
 }
 .article-more-link a {
   display: inline-block;
-  line-height: 1em;
-  padding: 15px 90px;
+  line-height: 2em;
+  padding: 8px 90px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   background: #fff;
   color: #6cacbf;
   text-shadow: 0 1px #fff;
   text-decoration: none;
-  max-width: 40%;
+  width: 50%;
   text-align: center;
   border: 1px solid #6cacbf;
 }
@@ -699,7 +699,7 @@ a.article-title:hover {
   background: #6cacbf;
   color: #fff;
   text-decoration: none;
-  text-shadow: 0 1px #4991a7;
+  text-shadow: 0 15px 30px -5px rgba(0,0,0,0.4);
 }
 .article-footer {
   font-size: 0.85em;
