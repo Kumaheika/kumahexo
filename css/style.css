@@ -678,16 +678,22 @@ a.article-title:hover {
   height: 100%;
   margin-top: 0;
 }
+.article-more-link {
+  text-align: center;
+}
 .article-more-link a {
   display: inline-block;
   line-height: 1em;
-  padding: 6px 15px;
+  padding: 6px 90px;
   -webkit-border-radius: 15px;
   border-radius: 15px;
   background: #fff;
-  color: #999;
+  color: #6cacbf;
   text-shadow: 0 1px #fff;
   text-decoration: none;
+  max-width: 40%;
+  text-align: center;
+  border: 1px solid #6cacbf;
 }
 .article-more-link a:hover {
   background: #c3512f;
